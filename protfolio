@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vishnupriya | Portfolio</title>
+  <meta name="description" content="Portfolio of Vishnupriya - Aspiring Software Developer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#1e1e2f;
+      --card:#2b2b40;
+      --muted:#c0c0d1;
+      --accent:#ff8c00;
+      --glass: rgba(255,255,255,0.05);
+      --glass-2: rgba(255,255,255,0.03);
+      --maxw:1100px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;}
+    body{
+      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; background:linear-gradient(180deg,var(--bg),#141426); color:#f1f1f9; line-height:1.5;
+      padding:24px; display:flex; justify-content:center;
+    }
+    .site{width:100%; max-width:var(--maxw)}
+    header{display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:28px}
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{width:54px; height:54px; border-radius:12px; background:linear-gradient(135deg,var(--accent),#ffb347); display:flex; align-items:center; justify-content:center; font-weight:700; color:#fff}
+    nav{display:flex; gap:14px; align-items:center}
+    nav a{color:var(--muted); text-decoration:none; font-weight:600}
+    .btn{background:var(--accent); color:#fff; padding:8px 12px; border-radius:10px; font-weight:700; text-decoration:none}
+
+    .hero{display:grid; grid-template-columns:1fr 360px; gap:24px; align-items:center; margin-bottom:28px}
+    .intro h1{font-size:28px; margin:0 0 8px;}
+    .intro p{margin:0 0 14px; color:var(--muted)}
+    .cta{display:flex; gap:12px}
+    .card{background:var(--card); padding:18px; border-radius:14px; box-shadow:0 6px 20px rgba(0,0,0,0.6);}
+
+    .profile{display:flex; flex-direction:column; gap:12px; align-items:center}
+    .avatar{width:160px; height:160px; border-radius:18px; background:linear-gradient(180deg,#2e2e42,#1a1a2e); display:flex; align-items:center; justify-content:center; font-size:48px; color:var(--muted);}
+    .contact{width:100%;}
+    .contact a{display:block; color:var(--muted); text-decoration:none; margin-bottom:8px}
+
+    section{margin-bottom:20px}
+    h2{font-size:16px; margin:0 0 12px}
+
+    .projects-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:12px}
+    .project{padding:12px; border-radius:10px; background:var(--glass);}
+    .project h3{margin:0 0 6px}
+    .project p{margin:0 0 10px; color:var(--muted); font-size:14px}
+    .tags{display:flex; gap:8px; flex-wrap:wrap}
+    .tag{background:var(--glass-2); padding:6px 8px; border-radius:8px; font-size:12px; color:var(--muted)}
+
+    .skills{display:flex; gap:8px; flex-wrap:wrap}
+    .skill{padding:8px 10px; border-radius:999px; background:linear-gradient(90deg, rgba(255,255,255,0.08), rgba(255,255,255,0.05)); color:#fff; font-weight:600}
+
+    .edu-item{display:flex; justify-content:space-between; gap:12px; color:var(--muted)}
+
+    footer{display:flex; justify-content:space-between; align-items:center; color:var(--muted); padding:12px 0}
+
+    @media (max-width:920px){
+      .hero{grid-template-columns:1fr}
+      .projects-grid{grid-template-columns:1fr}
+      header{flex-direction:column; align-items:flex-start; gap:12px}
+      .avatar{width:140px;height:140px}
+    }
+
+    .muted{color:var(--muted)}
+    a.link{color:var(--accent); text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="site">
+    <header>
+      <div class="brand">
+        <div class="logo">VP</div>
+        <div>
+          <div style="font-weight:700">Vishnupriya</div>
+          <div class="muted" style="font-size:13px">Aspiring Software Developer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="resume.pdf" download>Download Resume</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="intro">
+          <div class="card">
+            <h1>Hi — I'm Vishnupriya.</h1>
+            <p>I'm an aspiring software developer passionate about building user-friendly and efficient web applications. I love working with JavaScript, HTML, and CSS, and I am also exploring backend technologies.</p>
+            <div class="cta">
+              <a class="btn" href="#projects">See Projects</a>
+              <a class="link" href="#contact">Contact Me</a>
+            </div>
+          </div>
+
+          <section id="about" style="margin-top:12px">
+            <div class="card">
+              <h2>About Me</h2>
+              <p class="muted">I am a Computer Science Engineering graduate in 2026  who enjoys creating interactive and modern websites. I am looking for opportunities in software development where I can grow and contribute my skills effectively.</p>
+              <div style="display:flex; gap:12px; margin-top:12px; flex-wrap:wrap">
+                <div class="skill">📚 B.E. in CSE</div>
+                <div class="skill">🔭 Interested in Web Dev</div>
+                <div class="skill">🚀 Open to internships</div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <aside class="profile card">
+          <div class="avatar">VP</div>
+          <div style="text-align:center">
+            <div style="font-weight:700">Vishnupriya</div>
+            <div class="muted" style="font-size:13px">Frontend • HTML/CSS • JavaScript</div>
+          </div>
+
+          <div class="contact" style="width:100%">
+            <h2 style="margin-top:8px">Contact</h2>
+            <a href="mailto:vishnupriya@example.com">📧 vishnupriya@example.com</a>
+            <a href="https://github.com/vishnupriya" target="_blank">🐙 GitHub /vishnupriya</a>
+            <a href="https://www.linkedin.com/in/vishnupriya" target="_blank">🔗 LinkedIn /vishnupriya</a>
+          </div>
+        </aside>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project card">
+            <h3>Portfolio Website</h3>
+            <p>A personal responsive portfolio website built with HTML, CSS, and JavaScript. Showcases my skills, education, and projects.</p>
+            <div class="tags">
+              <div class="tag">HTML</div>
+              <div class="tag">CSS</div>
+              <div class="tag">JavaScript</div>
+            </div>
+            <div style="margin-top:10px">
+              <a class="link" href="https://github.com/vishnupriya/portfolio">View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project card">
+            <h3>Weather App</h3>
+            <p>A weather forecast web app using OpenWeather API. Displays live weather details with clean UI.</p>
+            <div class="tags">
+              <div class="tag">JavaScript</div>
+              <div class="tag">API</div>
+            </div>
+            <div style="margin-top:10px">
+              <a class="link" href="https://github.com/vishnupriya/weather-app">View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project card">
+            <h3>To-Do List App</h3>
+            <p>A simple to-do list application to manage daily tasks with local storage functionality.</p>
+            <div class="tags">
+              <div class="tag">HTML</div>
+              <div class="tag">CSS</div>
+              <div class="tag">JavaScript</div>
+            </div>
+            <div style="margin-top:10px">
+              <a class="link" href="https://github.com/vishnupriya/todo-app">View on GitHub</a>
+            </div>
+          </div>
+
+          <div class="project card">
+            <h3>Calculator</h3>
+            <p>A basic calculator app that performs arithmetic operations with a neat design.</p>
+            <div class="tags">
+              <div class="tag">JavaScript</div>
+              <div class="tag">CSS</div>
+            </div>
+            <div style="margin-top:10px">
+              <a class="link" href="https://github.com/vishnupriya/calculator">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="card">
+          <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React (learning)</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">Responsive Design</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <div class="card">
+          <div class="edu-item">
+            <div>
+              <div style="font-weight:700">B.E. in Computer Science</div>
+              <div class="muted">XYZ College — 2019 - 2023</div>
+            </div>
+            <div style="text-align:right">
+              <div style="font-weight:700">CGPA: 8.0</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="card">
+          <p class="muted">Feel free to reach out via email or LinkedIn. Below form is for demo purpose only.</p>
+          <form onsubmit="event.preventDefault(); alert('Thanks for reaching out! Replace this with backend service.');">
+            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+              <input required placeholder="Your name" style="flex:1; padding:10px; border-radius:8px; border:1px solid rgba(255,255,255,0.1); background:transparent; color:inherit" />
+              <input required type="email" placeholder="Your email" style="flex:1; padding:10px; border-radius:8px; border:1px solid rgba(255,255,255,0.1); background:transparent; color:inherit" />
+            </div>
+            <textarea required placeholder="Message" style="width:100%; margin-top:8px; padding:10px; border-radius:8px; min-height:100px; border:1px solid rgba(255,255,255,0.1); background:transparent; color:inherit"></textarea>
+            <div style="margin-top:8px; display:flex; gap:8px">
+              <button class="btn" type="submit">Send Message</button>
+              <a class="link" href="mailto:vishnupriya@example.com">Or email directly</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="muted">© Vishnupriya — Built with ❤️ using HTML & CSS</div>
+      <div>
+        <a class="link" href="#">Privacy</a> &nbsp;•&nbsp; <a class="link" href="#">Terms</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
